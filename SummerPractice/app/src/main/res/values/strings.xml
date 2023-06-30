@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SummerPractice</string>
+    <string name="calculate">Посчитать</string>
+    <string name="input_your_name">Введите свое имя</string>
+    <string name="input_your_height">Введите свой рост</string>
+    <string name="input_your_age">Введите свой возраст</string>
+    <string name="input_your_weight">Введите свой вес</string>
+</resources>
