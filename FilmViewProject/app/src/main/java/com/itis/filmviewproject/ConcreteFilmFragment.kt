@@ -21,9 +21,10 @@ class ConcreteFilmFragment : Fragment(R.layout.fragment_concrete_film) {
         val film = findFilmByIdOrNull(id)
 
         binding?.run {
-            filmId.text = film?.id.toString()
-            filmName.text = film?.name
-            filmDescription.text = film?.description
+            filmId.text = "ID: " + film?.id.toString()
+            filmName.text = "Название: " + film?.name
+            filmDescription.text = "Описание: " + film?.description
+            rating.text = "Рейтинг: " + film?.rating
             Glide.with(binding!!.root).load(film?.url).into(filmImage)
             backButton.setOnClickListener{
                 findNavController().navigate(R.id.action_concreteFilmFragment_to_mainFragment)
